@@ -2,9 +2,9 @@ public class Time {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int hour = 14;
-		int minute = 59;
-		int second = 30;
+		int hour = 20;
+		int minute = 18;
+		int second = 40;
 		int p = hour * 3600 + minute * 60 + second;
 		double percentage = (p * 100) / (24 * 3600);
 		
