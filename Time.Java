@@ -1,7 +1,6 @@
 public class Time {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int hour = 20;
 		int minute = 18;
 		int second = 40;
