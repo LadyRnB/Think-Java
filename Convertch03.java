@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /** 
-*This code converts centimeters to inches & feet.
+*This program converts centimeters to inches & feet.
 */
 public class Convertch03 {
 	public static void main(String[] args) {
