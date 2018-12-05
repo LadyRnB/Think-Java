@@ -1,13 +1,11 @@
 import java.util.Scanner;
 public class PrintDatech04 {
 	public static void printAmerican(int date, int year, String day, String month) {
-		System.out.print("The date in American format: ");
-		System.out.println(day+", "+month+" "+date+", "+year);
+		System.out.print("The date in American format: "+day+", "+month+" "+date+", "+year"\n");
 		
 	}
 	public static void printEuropean(int date, int year, String day, String month) {
-		System.out.print("The date in European format: ");
-		System.out.println(day+" "+date+" "+month+" "+year);
+		System.out.print("The date in European format: "+day+" "+date+" "+month+" "+year);
 	}
 	public static void main(String[] args) {
 		int date, year;
