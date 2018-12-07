@@ -13,7 +13,8 @@ public class GuessMyNumberch05 {
 		n = r.nextInt(100)+1;
 		if (g == n) {
 			System.out.print("Bingooo, that's the number I was thinking of: ");
-			System.out.println(n);
+			System.out.print(n);
+			System.out.print("!");
 			}
 			
 			else if (g > n) {
