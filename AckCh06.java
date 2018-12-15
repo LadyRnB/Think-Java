@@ -1,3 +1,6 @@
+/*
+ * A program to compute Ackermann function
+ */
 import java.util.Scanner;
 
 public class AckCh06 {
