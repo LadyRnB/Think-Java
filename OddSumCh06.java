@@ -5,19 +5,19 @@ public class OddSumCh06 {
 	public static boolean isPositive (int a) {
 		boolean pos;
 	if (a > 0 ) {
-		pos = true;
-	} else {pos = false;
-	}return pos;
+		return true;
+	} else { return false;
+	}
 	}
   
 	public static boolean isOdd (int a) {
 		boolean od;
 		if (a % 2 != 0) {
-			od = true;
+			return true;
 		} 
 		else {
-			od = false;
-		} return od;
+			return false;
+		} 
 	}
 
 	public static int oddSum(int m, int n) {
