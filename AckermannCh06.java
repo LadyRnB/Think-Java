@@ -3,7 +3,7 @@
  */
 import java.util.Scanner;
 
-public class AckCh06 {
+public class AckermannCh06 {
 	
 	public static int ack(int m, int n) {
 	if (m == 0) {
