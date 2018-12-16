@@ -1,3 +1,6 @@
+/** This program computes the power of a number 
+ * using recursive method
+ */
 import java.util.Scanner;
 
 public class PowerCh06 {
@@ -14,15 +17,15 @@ public class PowerCh06 {
 		}
 	public static void main(String[] args) {
 		double a;
-		int m;
+		int p;
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter the number a: ");
 		a = in.nextDouble();
-		System.out.print("Enter the power m: ");
-		m = in.nextInt();
-		power(a, m);
-		System.out.print(a + " power " + m + " is: ");
-		System.out.printf("%.3f", power(a,m));
+		System.out.print("Enter the power p: ");
+		p = in.nextInt();
+		power(a, p);
+		System.out.print(a + " power " + p + " is: ");
+		System.out.printf("%.3f", power(a,p));
 		in.close();
 	}
 }
