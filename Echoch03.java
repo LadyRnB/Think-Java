@@ -9,5 +9,6 @@ public class Echoch03 {
 	System.out.print("Type something else: ");
 	line = in.nextLine();
 	System.out.println("You also said: " + line);
+	in.close();
 }
 }
