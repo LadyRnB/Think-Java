@@ -22,6 +22,7 @@ public class PowerCh06 {
 		m = in.nextInt();
 		power(a, m);
 		System.out.print(a + " power " + m + " is: ");
-    System.out.printf("%.3f", power(a,m));	
+		System.out.printf("%.3f", power(a,m));
+		in.close();
 	}
 }
