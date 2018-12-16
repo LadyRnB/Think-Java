@@ -23,5 +23,6 @@ public class TriangleEx3ch06 {
 		} else {
 			System.out.println("You can form a triangle.");
 		}
+		in.close();
 	}
 }
