@@ -20,6 +20,7 @@ s1 = in.nextLine();
 System.out.print("Enter the street in which you grew up: ");
 s2 = in.nextLine();
 	zool(n, s1, s2);
+	in.close();
 }
 
 }
