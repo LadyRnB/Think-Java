@@ -15,6 +15,6 @@ public static void main(String[] args) {
 	in.nextLine();
 	txt = in.nextLine();
 	System.out.printf("\n%d is the number you've just entered, & your text is: %s", number , txt);
-	
+	in.close();
 }
 }
