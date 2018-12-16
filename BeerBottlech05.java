@@ -43,9 +43,6 @@ public class BeerBottlech05 {
 		x= in.nextInt();
 		System.out.println();
 		countdownbeer(x);
-		
+		in.close();
 	}
-
-}
-
 }
