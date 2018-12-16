@@ -44,7 +44,6 @@ public static void checkFermat(int a, int b, int c, int n) {
 		System.out.print((int)Math.pow(x,p)+(int)Math.pow(y,p));
 		System.out.println();
 		checkFermat(x, y, z, p);
-		
-		
+		in.close();
 	}
 }
