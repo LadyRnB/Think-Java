@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class OddSumCh06 {
 	
 	public static boolean isPositive (int a) {
-		boolean pos;
 	if (a > 0 ) {
 		return true;
 	} else { return false;
@@ -11,7 +10,6 @@ public class OddSumCh06 {
 	}
   
 	public static boolean isOdd (int a) {
-		boolean od;
 		if (a % 2 != 0) {
 			return true;
 		} 
@@ -40,5 +38,6 @@ public class OddSumCh06 {
 		y = in.nextInt();
 		System.out.print("The sum of odd numbers of "+ x + " is: ");
 		System.out.print(oddSum(y, x));
+		in.close();
 		}
 }
