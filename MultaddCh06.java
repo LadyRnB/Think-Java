@@ -36,5 +36,6 @@ public static void main(String[] args) {
 	System.out.print("\rEnter n: ");
 	 n = in.nextDouble();
 	System.out.printf("The result of this exponential function is: %.3f", expSum(n));
+	in.close();
 }
 }
