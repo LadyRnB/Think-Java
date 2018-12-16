@@ -8,7 +8,6 @@ public class ConvertCelFahrch03 {
 		c = in.nextDouble();
 		f = (c * 1.8) + 32;
 		System.out.printf("\n%.1f Celsius = %.1f Fahrenheit",c, f);
-		
+		in.close();
 	}
-
 }
