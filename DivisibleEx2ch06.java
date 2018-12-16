@@ -24,5 +24,6 @@ public class DivisibleEx2ch06 {
 			System.out.print(x + " is not divisible by " + y);
 			System.out.print(", & its quotient is: "+ x/y);
 		}
-		}
+		in.close();
+	}
 	}
