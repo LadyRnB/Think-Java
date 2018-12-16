@@ -18,6 +18,6 @@ public class Convertch03 {
 	remainder = (inches % IN_PER_FOOT);
     //ft stands for feet, in for remainder of inches
 	System.out.printf("%.2f cm = %d ft, %d in\n", cm, feet, remainder);
+	in.close();
 	}
-
 }
