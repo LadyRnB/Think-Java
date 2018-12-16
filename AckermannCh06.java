@@ -24,6 +24,7 @@ public class AckermannCh06 {
 		x = in.nextInt();
 		System.out.print("Enter y: ");
 		y = in.nextInt();
-		System.out.print(ack(x, y));		
+		System.out.print(ack(x, y));
+		in.close();
 	}
 	}
