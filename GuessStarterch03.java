@@ -22,6 +22,8 @@ Scanner in = new Scanner(System.in);
 	System.out.print("Your guess were off by: ");
 	System.out.print(guess - number);}
 else { System.out.print("My guess were off by: ");
-System.out.print(number - guess);}
+System.out.print(number - guess);
+     }
+	in.close();
 }
 }
