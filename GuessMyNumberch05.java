@@ -49,5 +49,6 @@ public class GuessMyNumberch05 {
 	number = rdm.nextInt(100) + 1;
 	checkPositive(guess);
 	guessAgain(guess, number);
+	scr.close();
 		}
 	}
