@@ -24,3 +24,6 @@ public class PrintDatech04 {
 		printAmerican(date, year, day, month);
 		System.out.println();
 		printEuropean(date, year, day, month);
+		in.close();
+	}
+}
