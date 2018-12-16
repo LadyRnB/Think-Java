@@ -9,8 +9,6 @@ public static void main(String[] args) {
 	min = (sec % 3600 ) / 60;
   remainder = ( sec % 60 ) % 60;
 	System.out.printf("\n%d seconds = %d hours, %d minutes, & %d seconds!", sec, h, min, remainder);
-	
-	
+	in.close();
 }
-
 }
