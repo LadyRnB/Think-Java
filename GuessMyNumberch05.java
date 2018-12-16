@@ -6,6 +6,7 @@ public class GuessMyNumberch05 {
 			System.out.print("The number should be between 1 & 100: ");
 			x = sca.nextInt();
 		}
+		sca.close();
 	}
 	public static void guessAgain(int g, int n) {
 		Scanner in = new Scanner(System.in);
@@ -34,6 +35,7 @@ public class GuessMyNumberch05 {
 			g = in.nextInt();
 			checkPositive(g);
 			guessAgain(g, n);
+			in.close();
 			}
 	}
 	
