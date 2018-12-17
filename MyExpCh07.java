@@ -1,5 +1,5 @@
 /** This program computes the exponential value
- *  of a given number 
+ *  of a given number using Math.pow & Factorial
  */
 import java.util.Scanner;
 
@@ -27,7 +27,7 @@ public class MyExpCh07 {
 		m = in.nextInt();
 		myExp(a, m);
 		System.out.print("The exponential value of " + a + " is : ");
-		System.out.print(myExp(a, m));
+		System.out.printf("%.3f", myExp(a, m));
 		in.close();
 	}
 }
