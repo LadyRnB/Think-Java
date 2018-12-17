@@ -18,6 +18,17 @@ public class MyExpCh07 {
 		return ex;
 	}
 	
+	//A method to display the number, its exponential value 
+	//using Math.exp & then without using it 
+	public static void check (int y, int k) {
+		System.out.print("The exponential value of " + y + " is: \r");
+		System.out.print(y +":\t");
+		System.out.printf("%.3f\t", myExp(y, k));
+		System.out.print(Math.exp(y));
+		System.out.print("\t");
+		}
+	
+	
 	public static void main(String[] args) {
 		int a, m;
 		Scanner in = new Scanner(System.in);
@@ -26,8 +37,7 @@ public class MyExpCh07 {
 		System.out.print("Enter the number of the terms m: ");
 		m = in.nextInt();
 		myExp(a, m);
-		System.out.print("The exponential value of " + a + " is : ");
-		System.out.printf("%.3f", myExp(a, m));
+		check(a, m);
 		in.close();
 	}
 }
