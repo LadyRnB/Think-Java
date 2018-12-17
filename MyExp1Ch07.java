@@ -29,7 +29,7 @@ public class MyExp1Ch07 {
 		m = in.nextInt();
 		myExp1(a, m);
 		System.out.print("The exponential value of " + a + " is : ");
-		System.out.printf("%.3f", myExp1(a, m));
+		System.out.printf(myExp1(a, m));
 		in.close();
 	}
 }
