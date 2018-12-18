@@ -17,8 +17,9 @@ public class MyExpCh07 {
 		}
 		return ex;
 	}
-	//A method to display the number, its exponential value 
-	//using Math.exp & then without using it 
+	/**A method to display the number, its exponential value 
+	using Math.exp & then without using it 
+	*/
 	public static void check (double y, int k) {
 		System.out.print("The exponential value of " + y + " is: \r");
 		System.out.print(y +":\t");
@@ -27,7 +28,7 @@ public class MyExpCh07 {
 		System.out.print("\t");
 	}
 	
-	/*A method to calculate and adjust the estimated exponential value 
+	/**A method to calculate and adjust the estimated exponential value 
 	 * with the correct value which uses
 	 * Math.exp
 	*/
