@@ -27,6 +27,10 @@ public class MyExpCh07 {
 		System.out.print("\t");
 	}
 	
+	/*A method to calculate and adjust the estimated exponential value 
+	 * with the correct value which uses
+	 * Math.exp
+	*/
 	public static int accurate(int y, int k) {
 			while (Math.exp(y)- myExp(y, k) >= 0.0001) {
 		k = k + 1;
