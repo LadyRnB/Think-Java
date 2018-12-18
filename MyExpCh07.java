@@ -17,6 +17,7 @@ public class MyExpCh07 {
 		}
 		return ex;
 	}
+	
 	/**A method to display the number, its exponential value 
 	using Math.exp & then without using it 
 	*/
@@ -47,6 +48,7 @@ public class MyExpCh07 {
 		a = in.nextDouble();
 		System.out.print("Enter the number of the terms m: ");
 		m = in.nextInt();
+		
 		/**A loop that display exponential values of a in case the variable a takes 
 		 * 0.1, 1.0, 10.0 or 100.0
 		 * It's an optional loop
