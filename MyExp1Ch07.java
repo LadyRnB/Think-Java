@@ -4,11 +4,11 @@
 import java.util.Scanner;
 
 public class MyExp1Ch07 {
-	public static double myExp1(int x, int n) {
+	public static double myExp1(double x, int n) {
 		int i;
 		double ex = 1;
 		int f = 1;
-		int p = 1;
+		double p = 1;
 		if (n == 0) {
 			return 1;
 		}
