@@ -22,7 +22,7 @@ public class MyExpCh07 {
 	using Math.exp & then without using it 
 	*/
 	public static void check (double y, int k) {
-		System.out.print("The exponential value of " + y + " is: \r");
+		System.out.println("The exponential value of " + y + " is: \r");
 		System.out.print(y +":\t");
 		System.out.printf("%.3f\t", myExp(y, k));
 		System.out.print(Math.exp(y));
