@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class MyExp1Ch07 {
 	public static double myExp1(double x, int n) {
 		int i;
-		double ex = 1;
+		double exp = 1;
 		int f = 1;
 		double p = 1;
 		if (n == 0) {
@@ -15,9 +15,9 @@ public class MyExp1Ch07 {
 		for (i = 1; i <= n; i++) {
 			f = f * i;
 			p = p * x;
-			ex = ex + (p / f);
+			exp = ex + (p / f);
 		}
-		return ex;
+		return exp;
 	}
 	
 	public static void main(String[] args) {
