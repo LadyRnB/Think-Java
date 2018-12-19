@@ -32,8 +32,7 @@ public class GaussCh07 {
 		System.out.println();
 		gauss(x, n);
 		System.out.println("The exponential value of " + x + " is: \r");
-		System.out.print(gauss(x, n) + "\t" + Math.exp(x));
-		
+		System.out.print(x + ": " + gauss(x, n) + "\t" + Math.exp(x));		
 		in.close();
 	}
 }
