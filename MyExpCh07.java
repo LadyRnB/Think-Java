@@ -6,16 +6,16 @@ import java.util.Scanner;
 public class MyExpCh07 {
 	public static double myExp(double x, int n) {
 		int i;
-		double ex = 1;
+		double exp = 1;
 		int f = 1;
 		if (n == 0) {
 			return 1;
 		}
 		for (i = 1; i <= n; i++) {
 			f = f * i;
-			ex = ex + ((Math.pow(x, i)) / f);
+			exp = exp + ((Math.pow(x, i)) / f);
 		}
-		return ex;
+		return exp;
 	}
 	
 	/**A method to display the number, its exponential value 
