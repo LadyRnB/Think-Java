@@ -62,7 +62,8 @@ public class MyExpCh07 {
 				accurate(a, m);
 				System.out.print(accurate(a, m));
 				}
-		}
+		}// You can add the same loop for negative numbers separately, by removing this condition (|| a == -0.001)
+		//& you invoke check with a negative number, like this: check(-a, m)
 			else {
 				myExp(a, m);
 				check(a, m);
