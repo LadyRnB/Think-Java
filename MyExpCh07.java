@@ -53,16 +53,16 @@ public class MyExpCh07 {
 		 * 0.1, 1.0, 10.0 or 100.0
 		 * It's an optional loop
 		*/
-		if (a == 0.001) {
-			while (a < 100.0) {
+	if (a == 0.001 || a == -0.001) {
+			while (a < 100.0 && a > (-100.0)) {
 				a = a * 10;
 				System.out.println();
 				check(a,m);
 				System.out.print("\nThe number the most accurate of the terms for the exponential of " + a +" is: ");
 				accurate(a, m);
 				System.out.print(accurate(a, m));
-			}
-			}
+				}
+		}
 			else {
 				myExp(a, m);
 				check(a, m);
