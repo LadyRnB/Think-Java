@@ -1,7 +1,7 @@
 
 /**
  * A program that displays the elements of a given array
- * raised in a given power (inside main, without method)
+ * raised in a given power (inside main, without method) /Check ArrayEx1Ch08
  */
 import java.util.Scanner;
 import java.util.Arrays;
