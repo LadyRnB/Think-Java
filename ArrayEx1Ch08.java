@@ -1,18 +1,22 @@
 
 /**
  * A program that displays the elements of a given array
- * raised in a given power (using a method)/ Check ArrayCh08
+ * raised in a given power (using a method) / Check ArrayCh08
  */
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class abc {
+public class ArrayEx1Ch08 {
 	public static double[] powArray(double[] m) {
-		int i;
+		int i, p;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the power p: ");
+		p = sc.nextInt();
 		double[] t = new double[m.length];
 		for (i = 0; i < m.length; i++) {
-			t[i] = Math.pow(m[i], 2);
+			t[i] = Math.pow(m[i], p);
 		}
+		sc.close();
 		return t;
 	}
 
@@ -30,9 +34,9 @@ public class abc {
 
 		System.out.println("\nThis is the array a: ");
 		System.out.print(Arrays.toString(a));
-		System.out.println();
-		System.out.println("\nThis is the array b, \"squared a elements\": ");
+		System.out.println("\n");
 		b = powArray(a);
+		System.out.println("\nThis is the array b, \"squared a elements\": ");
 		System.out.print(Arrays.toString(b));
 		in.close();
 	}
