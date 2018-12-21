@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 public class ArrayCh08 {
 	public static void main(String[] args) {
-		int n, i;
+		int n, i, p;
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter the number of the elements of a: ");
 		n = in.nextInt();
@@ -22,9 +22,12 @@ public class ArrayCh08 {
 
 		System.out.println("\nThis is the array a: ");
 		System.out.print(Arrays.toString(a));
+		System.out.println("\n");
+		System.out.print("Enter the power p: ");
+		p = in.nextInt();
 
 		for (i = 0; i < a.length; i++) {
-			b[i] = Math.pow(a[i], 2);
+			b[i] = Math.pow(a[i], p);
 		}
 
 		System.out.println();
