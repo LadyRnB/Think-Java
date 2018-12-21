@@ -1,5 +1,5 @@
 /** This program computes the exponential value
- *  of a given number without using Math.pow & Factorial
+ *  of a given number without using Math.pow & Factorial / Check MyExpCh07
  */
 import java.util.Scanner;
 
