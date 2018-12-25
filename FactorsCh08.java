@@ -26,7 +26,7 @@ public class FactorsCh08 {
 			System.out.print(Arrays.toString(x));
 			System.out.print(" contains numbers that are not factors of " + n + " which are: ");
 			int[] newb = new int[nonfac]; // Creating a new array
-			System.arraycopy(b, 0, newb, 0, newb.length); // Copying the array b into the new created one: newb
+			System.arraycopy(b, 0, newb, 0, newb.length); // Copying the array b into the new created smaller one: newb
 			System.out.print(Arrays.toString(newb));
 			return false;
 		} else {
