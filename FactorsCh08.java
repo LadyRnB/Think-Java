@@ -6,14 +6,14 @@ public class FactorsCh08 {
 		int i;
 		int j = 0;
 		int count = 0;
-		int nonfac = 0;
+		int notfac = 0;
 		int[] b = new int[x.length];
 
 		for (i = 0; i < x.length; i++) {
 			if (n % x[i] != 0) {
 				b[j] = x[i];
 				j++;
-				nonfac++;
+				notfac++;
 			} else {
 				count++;
 			}
@@ -25,7 +25,7 @@ public class FactorsCh08 {
 			System.out.print("\n\nThis array ");
 			System.out.print(Arrays.toString(x));
 			System.out.print(" contains numbers that are not factors of " + n + " which are: ");
-			int[] newb = new int[nonfac]; // Creating a new array
+			int[] newb = new int[notfac]; // Creating a new array
 			System.arraycopy(b, 0, newb, 0, newb.length); // Copying the array b into the new created smaller one: newb
 			System.out.print(Arrays.toString(newb));
 			return false;
