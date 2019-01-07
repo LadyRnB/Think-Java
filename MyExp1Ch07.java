@@ -15,7 +15,7 @@ public class MyExp1Ch07 {
 		for (i = 1; i <= n; i++) {
 			f = f * i;
 			p = p * x;
-			exp = ex + (p / f);
+			exp = exp + (p / f);
 		}
 		return exp;
 	}
@@ -29,7 +29,7 @@ public class MyExp1Ch07 {
 		m = in.nextInt();
 		myExp1(a, m);
 		System.out.print("The exponential value of " + a + " is : ");
-		System.out.printf(myExp1(a, m));
+		System.out.print(myExp1(a, m));
 		in.close();
 	}
 }
