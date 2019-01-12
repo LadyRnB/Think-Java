@@ -1,5 +1,7 @@
 public class Hello {
-public static void main(String[] args)
-System.out.println("Hello, World!");
-}
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+		System.exit(0); //The method never returns because it's the end of the world
+		//and none of your code is going to be executed next.
+	}
 }
