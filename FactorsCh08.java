@@ -28,9 +28,9 @@ public class FactorsCh08 {
 			int[] newb = new int[notfac]; // Creating a new array
 			System.arraycopy(b, 0, newb, 0, newb.length); // Copying the array b into the new created smaller one: newb
 			System.out.print(Arrays.toString(newb));
-			return false;
+			return false; 
 		} else {
-			System.out.println("\n\nAll numbers of the array a are factors of " + n + ".");
+			System.out.println("\n\nThe numbers of the array a are all factors of " + n + ".");
 		}
 		return true;
 	}
