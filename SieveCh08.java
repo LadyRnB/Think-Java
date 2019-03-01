@@ -1,3 +1,4 @@
+
 /**
  * A program to get prime numbers out of a given number
  * Check Sieve Of Eratosthenes
@@ -17,20 +18,21 @@ public class SieveCh08 {
 		for (i = 2; i < Math.sqrt(n); i++) {
 
 			if (primes[i] == true) {
-				
+
 				for (j = (i * i); j < n; j = (j + i)) {
 					primes[j] = false;
 				}
 			}
 		}
 		for (i = 2; i < primes.length; i++) {
-	         if(primes[i] == true) {
-	            System.out.print(i + ", ");
-	         }
-	      }
+			if (primes[i] == true) {
+				System.out.print(i + " | ");
+			}
+		}
 	}
+
 	public static void main(String[] args) {
-		int x ;
+		int x;
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter the number x: ");
 		x = in.nextInt();
