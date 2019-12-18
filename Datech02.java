@@ -1,4 +1,4 @@
-public class Datach02 {
+public class Datech02 {
 	
 	public static void main(String[] args) {
   
