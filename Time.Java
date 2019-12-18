@@ -21,7 +21,7 @@ public class Time {
 		System.out.println("\nThe number of seconds elapsed since midnight:");
 		System.out.println(d);
 		System.out.println("\nThe percentage of the time elapsed since midnight:");
-		System.out.println(p);
+		System.out.println(p + " %");
 		System.out.println("\nThe current time is:");
 		System.out.print(hour1);
 		System.out.print(":");
@@ -31,11 +31,11 @@ public class Time {
 		System.out.println("\nThe elapsed time since starting coding:");
 		System.out.println(d1 - d);
 		System.out.println("\nThe percentage of the time elapsed since starting coding:");
-		System.out.println(((d1 - d) * 100) / (24 * 3600)) ;
+		System.out.println(((d1 - d) * 100) / (24 * 3600) + " %") ;
 		System.out.println("\nThe number of seconds remaining in the day:");
 		System.out.println((24 * 3600) - d1 );
 		System.out.println("\nThe percentage of the day that has passed:");
-		System.out.println(p1);
+		System.out.println(p1 + " %");
     }
 
 }
