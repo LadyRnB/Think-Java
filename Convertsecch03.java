@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	sec = in.nextInt();
 	h = sec / 3600;
 	min = (sec % 3600 ) / 60;
-  remainder = ( sec % 60 ) % 60;
+  remainder = ( sec % 60 );
 	System.out.printf("\n%d seconds = %d hours, %d minutes, & %d seconds!", sec, h, min, remainder);
 	in.close();
 }
