@@ -24,7 +24,7 @@ public class GuessStarterch03 {
 			System.out.print("\nYour guess were off by: ");
 			System.out.print(guess - number);
 		} else {
-			System.out.print("My guess were off by: ");
+			System.out.print("\nYour guess were off by: ");
 			System.out.print(number - guess);
 		}
 		in.close();
