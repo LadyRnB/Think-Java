@@ -7,6 +7,7 @@ public class CheckFermatch05 {
 		c = (int) Math.pow(c, n);
 		if (n > 2) {
 			if ((a + b) == c) {
+				System.out.print("Holy smokes, Fermat was wrong!" + a + " + " + b + " = " + c);
 
 			} else {
 				System.out.print("no, that doesn't work, since: " + a + " + " + b + " != " + c);
