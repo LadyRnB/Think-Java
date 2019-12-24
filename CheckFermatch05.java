@@ -30,8 +30,8 @@ public class CheckFermatch05 {
 		z = in.nextInt();
 		System.out.print("Enter the number p: ");
 		p = in.nextInt();
-		System.out.print((int) Math.pow(x, p) + " + ");
-		System.out.print((int) Math.pow(y, p) + " = ");
+		System.out.print((int) Math.pow(x, p) + " + "); //Type cast is useless here as well
+		System.out.print((int) Math.pow(y, p) + " = "); //since all numbers are integers
 		System.out.print((int) Math.pow(x, p) + (int) Math.pow(y, p));
 		System.out.println();
 		checkFermat(x, y, z, p);
