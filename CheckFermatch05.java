@@ -5,6 +5,9 @@ public class CheckFermatch05 {
 		a = (int) Math.pow(a, n);
 		b = (int) Math.pow(b, n);
 		c = (int) Math.pow(c, n);
+		// note: Better remove type cast, using Type casting is useless here, 
+		//since the user should introduce an integer, otherwise the program
+		//will generate an InputMismatchException
 		if (n > 2) {
 			if ((a + b) == c) {
 				System.out.print("Holy smokes, Fermat was wrong!" + a + " + " + b + " = " + c);
