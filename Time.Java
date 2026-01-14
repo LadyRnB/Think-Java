@@ -1,43 +1,51 @@
+import java.time.Duration;
+import java.time.LocalTime;
+import java.util.Scanner;
+
 public class Time {
 
-	public static void main(String[] args) {
-		import java.util.Scanner;
+    public static void main(String[] args) {
 
-public class Time{
-   public static double elapse(double d, double h, double m, double s ){
-        d = h * 3600 + m * 60 + s;
-       return (d * 100.) / (24 * 3600);
+        LocalTime now = LocalTime.now();
+
+        LocalTime startingTime = askForStartingTime();
+
+        Duration durationSinceStarting = Duration.between(startingTime, now);
+        System.out.printf("Time elapsed since starting: %dh %dmn %ds\n",
+                durationSinceStarting.toHoursPart(),
+                durationSinceStarting.toMinutesPart(),
+                durationSinceStarting.toSecondsPart());
+
+
+        double timePercentage = dayTimePercentage(durationSinceStarting);
+        long durationInSec = Duration.between(LocalTime.MIDNIGHT, now).toSeconds();
+        System.out.printf("""
+                The percentage of the time elapsed since starting: %.2f %%
+                The number of seconds elapsed since %s : %,d seconds
+                """, timePercentage, LocalTime.MIDNIGHT, durationInSec);
+
+        Duration durationSinceMid = Duration.between(LocalTime.MIDNIGHT, now);
+        double percentSinceMid = dayTimePercentage(durationSinceMid);
+        System.out.printf("""
+                The percentage of the time elapsed since %s : %.2f %%
+                The percentage of the remaining day: %.2f %%
+                """, LocalTime.MIDNIGHT, percentSinceMid, (100 - percentSinceMid));
     }
-public static void main(String [] args){
 
-    Scanner in = new Scanner(System.in);
-    System.out.print("Enter Hour: ");
-    double hour = in.nextDouble();
-    System.out.print("Enter minutes: ");
-    double minute = in.nextDouble();
-    System.out.print("Enter seconds: ");
-    double second = in.nextDouble();
-    double dauer = hour * 3600 + minute * 60 + second;
-    System.out.printf("\nThe number of seconds elapsed since [00:00] : %f \n", dauer);
-    System.out.print("\nThe percentage of the time elapsed since [00:00]:\n" + elapse(dauer,hour,minute,second) + " %");
-    System.out.println("\n\n***********************************************************\n");
-    System.out.print("Enter Start  hour: ");
-    double hr = in.nextDouble();
-    System.out.print("Enter Start minutes: ");
-    double mn = in.nextDouble();
-    System.out.print("Enter Start seconds: ");
-    double sc = in.nextDouble();
-    double dr = hr * 3600 + mn * 60 + sc;
-		System.out.print("\nSeconds elapsed since starting coding : " + (dauer - dr));
-		System.out.print("\nThe percentage of the time elapsed since starting coding: ");
-		System.out.print(((dauer - dr) * 100) / (24 * 3600) + " %");
-		System.out.print("\nThe number of seconds remaining in the day: ");
-		System.out.print((24 * 3600) - dr);
-		System.out.print("\nThe percentage of the day that has passed: " + elapse(dr,hr, mn, sc) + " %");
+    private static LocalTime askForStartingTime() {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter starting Hour: ");
+        int hour = in.nextInt();
+        System.out.print("Enter starting minutes: ");
+        int minute = in.nextInt();
+        System.out.print("Enter starting seconds: ");
+        int second = in.nextInt();
         in.close();
-   }
+        return LocalTime.of(hour, minute, second);
+    }
 
-}
-	}
+    private static double dayTimePercentage(Duration duration) {
+        return (duration.toSeconds() * 100.) / Duration.ofDays(1).toSeconds();
+    }
 
 }
