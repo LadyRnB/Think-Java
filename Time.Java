@@ -19,6 +19,11 @@ public class Time {
 
         double timePercentage = dayTimePercentage(durationSinceStarting);
         long durationInSec = Duration.between(LocalTime.MIDNIGHT, now).toSeconds();
+
+  // An only one line instead of writing many lines to dispaly a message :
+ // System.out.print("""
+//                   """)
+
         System.out.printf("""
                 The percentage of the time elapsed since starting: %.2f %%
                 The number of seconds elapsed since %s : %,d seconds
