@@ -2,7 +2,7 @@ import java.time.Duration;
 import java.time.LocalTime;
 import java.util.Scanner;
 
-public class Time {
+public class TimeCh02 {
 
     public static void main(String[] args) {
 
