@@ -1,4 +1,4 @@
-public class Hello {
+public class HelloCh01 {
 	public static void main(String[] args) {
 		System.out.println("Hello, World!");
 		System.exit(0); //The method never returns because it's the end of the world
